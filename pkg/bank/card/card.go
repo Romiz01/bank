@@ -4,6 +4,7 @@ import (
 	"bank/pkg/bank/types"
 )
 
+/*
 // isue card
 func IssueCard(currency types.Currency,
 	color string, name string) types.Card {
@@ -19,9 +20,19 @@ func IssueCard(currency types.Currency,
 	}
 	return card
 }
+*/
 
 // PaymentSources
 
 func PaymentSources(cards []types.Card) []types.PaymentSource {
+	var operations []types.PaymentSource
+	i := 0
+	for _, card := range cards {
+		if !card.Active {
+			continue
+		}
+		i++
+	}
+	return operations
 
 }
