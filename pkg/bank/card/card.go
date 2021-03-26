@@ -19,3 +19,9 @@ func IssueCard(currency types.Currency,
 	}
 	return card
 }
+
+// PaymentSources
+
+func PaymentSources(cards []types.Card) []types.PaymentSource {
+
+}
