@@ -2,9 +2,9 @@ package card
 
 import (
 	"bank/pkg/bank/types"
-
 )
 
+// isue card
 func IssueCard(currency types.Currency,
 	color string, name string) types.Card {
 
@@ -19,5 +19,3 @@ func IssueCard(currency types.Currency,
 	}
 	return card
 }
-
-
